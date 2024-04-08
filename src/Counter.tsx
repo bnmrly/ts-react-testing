@@ -5,8 +5,8 @@ export const Counter: React.FunctionComponent = () => {
 
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>Add One</button>
-      <div role="contentinfo">Count is {count}</div>
+      <button onClick={() => setCount(count + 1)}>Add Item</button>
+      <div role="contentinfo">Item Count is {count}</div>
     </div>
   );
 };

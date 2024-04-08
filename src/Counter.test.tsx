@@ -5,9 +5,8 @@ import { Counter } from "./Counter";
 test("handles onClick", () => {
   render(<Counter />);
 
-  const divElement = screen.getByRole("contentinfo");
-  const buttonElement = screen.getByText("Add One");
+  const buttonElement = screen.getByText("Add Item");
   fireEvent.click(buttonElement);
-
-  expect(divElement).toHaveTextContent("Count is 1");
+  const divElement = screen.getByRole("contentinfo");
+  expect(divElement).toHaveTextContent("Item Count is 1");
 });
