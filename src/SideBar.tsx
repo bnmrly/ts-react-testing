@@ -1,13 +1,15 @@
 import React from "react";
 
-export const SideBar = ({
-  items,
-}: {
-  items: {
-    name: string;
-    href: string;
-  }[];
-}) => (
+type Item = {
+  name: string;
+  href: string;
+};
+
+type SideBarProps = {
+  items: Item[];
+};
+
+export const SideBar = ({ items }: SideBarProps) => (
   <div>
     {items.map((item) => (
       <div key={item.href}>
