@@ -7,4 +7,4 @@ export const ButtonWrapper: React.FunctionComponent<
   > & {
     title: string;
   }
-> = ({ title, ...props }) => <button {...props}>{title}</button>;
+> = ({ title, ...props }) => <button {...props}>{title} </button>;
