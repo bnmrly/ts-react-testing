@@ -4,6 +4,8 @@ import { setupServer } from "msw/node";
 import { render, screen, waitFor } from "@testing-library/react";
 import { APIComponent } from "./APIComponent";
 
+// TODO: check out https://mswjs.io/docs for mock service worker
+
 const server = setupServer(
   rest.get("/api", (req, res, ctx) => {
     return res(ctx.json({ name: "Jack" }));
