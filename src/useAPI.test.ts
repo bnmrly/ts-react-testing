@@ -19,5 +19,6 @@ test("should increment", async () => {
 
   await waitForNextUpdate();
 
+  // compares object
   expect(result.current).toEqual({ name: "Jack" });
 });
