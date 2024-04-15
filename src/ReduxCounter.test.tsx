@@ -5,6 +5,8 @@ import { Provider } from "react-redux";
 import { ReduxCounter } from "./ReduxCounter";
 import { createStore } from "./store";
 
+// uses redux toolkit approach
+
 test("increment", () => {
   render(
     <Provider store={createStore()}>
@@ -20,6 +22,8 @@ test("increment", () => {
 
   expect(counter).toHaveTextContent("1");
 });
+
+// need to ensure that environemntis clean or first test will fail
 
 test("increment again", () => {
   render(

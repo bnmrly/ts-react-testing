@@ -8,6 +8,7 @@ const initialState: CounterState = {
   value: 0,
 };
 
+// redux toolkit approach
 export const counterSlice = createSlice({
   name: "counter",
   initialState,
